@@ -1,0 +1,23 @@
+name: BlockScanner
+version: "2.0.0"
+main: dev.blockscanner.BlockScannerPlugin
+api-version: "1.21"
+description: Detective block scanner with CoreProtect integration
+authors: [YourName]
+
+depend:
+  - CoreProtect
+
+commands:
+  scanner:
+    description: Gives you the Scanner item
+    usage: /scanner
+    permission: blockscanner.give
+
+permissions:
+  blockscanner.use:
+    description: Allows using the block scanner
+    default: op
+  blockscanner.give:
+    description: Allows /scanner command
+    default: op
