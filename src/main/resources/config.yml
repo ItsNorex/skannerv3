@@ -1,0 +1,19 @@
+scanner:
+  custom-model-data: 1001
+  material: STICK
+  # Days to look back
+  lookup-days: 2
+  # Max unique players shown as "traces"
+  max-traces: 3
+  # Max actions shown per player when scanned
+  max-actions-per-player: 5
+
+# Explosion/fire tracing
+tracers:
+  explosion-radius: 12        # blocks to search for TNT placer
+  explosion-window-sec: 120   # how far back to look for TNT placement
+  fire-spread-radius: 20      # blocks to search for fire igniter
+  fire-window-sec: 600        # 10 minutes
+
+# Chat formatting prefix
+prefix: "§8[§6Scanner§8]§r "
